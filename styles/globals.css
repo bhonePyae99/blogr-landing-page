@@ -1,16 +1,35 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Overpass", sans-serif;
+  background-color: white;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.round-bl {
+  border-bottom-left-radius: 6rem;
 }
 
-* {
-  box-sizing: border-box;
+.round-tr {
+  border-top-right-radius: 6rem;
+}
+
+.intro {
+  background-image: url("../public/images/bg-pattern-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 20% 45%;
+}
+
+.btn {
+  @apply mt-3 px-5 py-3 rounded-full;
+}
+
+@media (max-width: 375px) {
+  .intro {
+    background-image: url("../public/images/bg-pattern-intro-mobile.svg");
+    background-position: 25% 20%;
+  }
 }
