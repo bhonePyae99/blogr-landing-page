@@ -66,9 +66,18 @@ const First = () => {
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 md:pr-16 mt-20">
-        <div className="row-span-2 -ml-64">
-          <img src="/images/illustration-laptop-desktop.svg" alt="" />
+      <div className="grid md:grid-cols-2 md:pr-16 md:mt-20">
+        <div className="row-span-2 md:-ml-64 my-10">
+          <img
+            src="/images/illustration-laptop-desktop.svg"
+            className="md:block hidden"
+            alt=""
+          />
+          <img
+            src="/images/illustration-laptop-mobile.svg"
+            className="md:hidden block"
+            alt=""
+          />
         </div>
         <div className="flex items-end text-center md:text-left px-10 md:px-0">
           <div className="pb-10">
@@ -92,6 +101,48 @@ const First = () => {
             that makes customization and deployment a breeze, but capable of
             producing even the most complicated sites.
           </p>
+        </div>
+      </div>
+      <div className="round-tr bg-fbg md:mt-0 mt-10">
+        <div className="round-tr grid md:grid-cols-4  grid-cols-1 p-10 text-footer gap-y-10">
+          <div className="col-span-1 text-center">
+            <h2 className="text-3xl font-bold text-white">Blogr</h2>
+          </div>
+          <div className="col-span-1 leading-9 md:text-left text-center">
+            <p className="text-white">Product</p>
+            <ul className="list-none mt-3">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integration</li>
+            </ul>
+          </div>
+          <div className="col-span-1 leading-9 md:text-left text-center">
+            <p className="text-white">Company</p>
+            <ul className="list-none mt-3">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div className="col-span-1 leading-9 md:text-left text-center">
+            <p className="text-white">Connect</p>
+            <ul className="list-none mt-3">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+        <div className="text-center text-footer">
+          Challenge by{" "}
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . Coded by{" "}
+          <a href="https://github.com/bhonePyae99">Bhone Pyae Kyaw</a>.
         </div>
       </div>
     </section>
